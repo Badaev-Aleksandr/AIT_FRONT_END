@@ -1,0 +1,40 @@
+body{
+background-color: bisque;
+}
+a[href="https://www.gazeta.ru/gazeta/authors/ekaterina_shutova.shtml"]{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(54, 17, 200);
+
+}
+#panda{
+width: 40% ;
+height: auto;
+display: block;
+margin: 0 auto;
+}
+h2.headline{
+    text-align: center;
+    background-color: rgba(79, 43, 186, 0.532);
+    color: #234a22;
+}
+div.subheader{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: aquamarine;
+}p.idea{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+span.idea{
+    font-style: oblique;
+    color: rgb(236, 22, 80);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: cadetblue;
+    color: #fff;
+}
