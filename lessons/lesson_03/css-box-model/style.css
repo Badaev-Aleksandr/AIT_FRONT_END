@@ -1,0 +1,59 @@
+.red-box{
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    border: 20px solid blue;
+    padding: 30px;
+    margin: 50px;
+}
+.blue-box{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+
+    margin-left: 50px; /* Граница слева */
+    margin-right: 40px;  /* Граница справа*/
+    margin-top: 30px;  /* Граница сверху*/
+    margin-bottom: 20px;  /* Граница снизу*/
+}
+.grean-box{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    padding: 40px 30px 10px; /* вверх(40) право-лево(30) низ(10) */
+}
+.purple-box{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    padding: 20px 50px; /* вверх низ и право лево */
+}
+.black-box{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+}
+.rounded-corners{
+    border-radius: 20px;
+}
+.asymetric-corners{
+    border-radius: 60px 30px 0 10px;
+}
+.orange-box{
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+  /*   background-color: orange;
+    /* вверх право низ лево */
+    /* padding: 50px 40px 30px 20px;  */ /* сокращенная запись */ 
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+span{
+    font-weight: 800;
+}
+.container{
+    display: flex;
+}
