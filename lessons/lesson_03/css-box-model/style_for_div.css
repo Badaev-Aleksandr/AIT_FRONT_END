@@ -1,0 +1,19 @@
+.container{
+display: flex;
+padding: 20px 20px;
+margin: 20px 20px;
+flex-wrap: wrap;
+}
+.divclass{
+    width: 100px;
+    height: 100px;
+    border: 3px solid brown;
+    border-style: dashed;
+    margin: 15px;
+    padding: 20px;
+    text-align:center;
+}
+.container .divclass:nth-child(3n-1):nth-child(3n+2){
+border-radius: 50%;
+background-color: green;
+}
