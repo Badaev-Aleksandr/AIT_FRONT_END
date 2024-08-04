@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa</title>
+</head>
+<body>
+    <form action="./greetings.html" method="get">
+    <h1>Letter to Santa</h1>
+    <p class="form" >Fill out the form for Santa</p>
+    <div class="kinds-name">
+        <input type="text" id="name" placeholder="your name" required>
+    </div>
+    <div class="gender-container">
+    <p class="gender">Select your gender:</p>
+    <div class="gender-selection">
+       <input type="radio" name="gender" id="male" value="male" required>
+       <label for="male">Male</label>
+    </div>
+    <div class="gender-selection">
+        <input type="radio" name="gender" id="female" value="female" required>
+        <label for="female">Female</label>
+    </div>
+    </div>
+    <div class="date-birth">
+        <label for="birthday">Your Birthday</label>
+        <input type="date" id="birthday" name="birthday" required>
+    </div>
+    <div class="behavior-form">
+        <label for="behavior">Have you been good this year?
+            <select name="behavior" id="behavior" required>
+                <!-- <option selected value="none"></option> -->
+                <option value="YES">YES</option>
+                <option selected value="NO">NO</option>
+            </select>
+        </label>
+    </div>
+    <div class="city-kinds">
+        <label for="city">City
+            <input type="text" name="city" id="city" placeholder="Your City" required>
+        </label>
+    </div>
+    <div class="favorite-color">
+        <label for="color">Enter your favorite color:
+            <input type="color" name="color_name" id="color" required>
+        </label>
+    </div>
+    <br>
+    <div class="login-container">
+        <div class="log-email">
+                <label for="email">Email
+                    <input type="email" name="email_" id="email" placeholder="email@your_email.com" required>
+                </label>
+        </div>
+        <div class="login-password">
+            <label for="password_">Password
+                <input type="password" id="password_" placeholder="your password" required>
+            </label>
+        </div>
+    </div>
+    <div class="action">
+        <p>Send a form or clear</p>
+        <button type="submit" id="send">Send a letter</button>
+        <button type="reset" id="reset">Reset</button>
+    </div>
+
+</form>
+</body>
+</html>

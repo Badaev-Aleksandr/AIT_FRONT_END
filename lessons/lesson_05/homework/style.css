@@ -1,0 +1,49 @@
+.gender-container{
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+.gender-selection{
+    padding: 2px;
+    margin: 5px 1px;
+}
+.date-birth{
+    margin: 5px;
+    padding: 5px;
+}
+.behavior-form{
+    margin: 5px;
+    padding: 5px;
+}
+.city-kinds{
+    margin: 5px;
+    padding: 5px;
+}
+form{
+    margin: 5px;
+    padding: 5px;
+}
+.login-container{
+    max-width: 300px;
+}
+.login-container div{
+    margin-bottom: 15px;
+}
+.login-container label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.login-container input{
+    flex: 1;
+    padding: 1px;
+    margin-left: 10px;
+}
+.login-container #email{
+    margin-left: 34px;
+}
+.action button{
+    margin: 10px;
+    padding: auto;
+}
