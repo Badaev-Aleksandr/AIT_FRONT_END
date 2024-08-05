@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./pictures/small_santa.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ho-HO-HO!</title>
+</head>
+
+<body>
+    <H1>Write a letter to Santa!</H1>
+    <form action="greetings.html" id="contact_form">
+        <div class="about_me">
+            <p>Dear Friend, tell Santa who you are, and what are you dreaming of?</p>
+            <img name="rudolf" src="https://freepngimg.com/thumb/santa_claus/82409-reindeer-claus-deer-rudolph-santa-download-hd-png-thumb.png" alt="">
+            <textarea name="about_me" id="" cols="30" rows="10" placeholder="your name and thoughts"></textarea>
+            <div class="flying_santa"><img src="./pictures/robosanta.png" alt=""></div>
+            <div>
+                <p>What is your birthday?</p>
+                <input type="date" id="birh-date">
+            </div>
+        </div>
+        <div class="santa_love">
+            <p>How do you think, on the scale of 1 to 10, how much do you love Santa?</p>
+            <input type="range" name="love_santa" id="love_santa" min="1" max="10">
+            <label for="love_santa"></label>
+        </div>
+        <div class="quiz">
+            <h1>It is time to answer some questions about you</I></h2>
+                <img name="riding_santa" src="https://freepngimg.com/thumb/santa_claus/82407-deer-claus-ornament-sled-reindeer-santa-christmas.png" alt="">
+            <P>Are you naughty or nice?</P>
+            <input required id="q1" type="radio" name="q1" value="nice">
+            <label for="q1">Nice</label>
+            <input required id="q1" type="radio" name="q1" value="naughty">
+            <label for="q1">Naughty</label>
+            <p>Are you helping people?</p>
+            <input required id="q2" type="radio" name="q2" value="yes">
+            <label for="q2">Yes</label>
+            <input required id="q2" type="radio" name="q2" value="no">
+            <label for="q2">No</label>
+            <p>Please select your favorite color</p>
+            <input type="color" name="color" id="color">
+            <label for="color">the favotite color is ...</label>
+        <div class="select">
+            <p>this was necessary for the package</p>
+            <h3>which form the package should be?</h2>
+                <select name="package" id="package" >
+                    <option value="gift">Square box</option>
+                    <option value="gift">Round box</option>
+                    <option value="gift">Fancy box</option>
+                    <option value="gift">No box</option>
+                </select>
+        </div>
+            <h1 class="thank_you">Thank you to be honest with Santa</h1>
+        </div>
+
+        <div class ="login">
+            <H2>Please login to continue...</H2>
+            <label for="email">Email </label><input type="email" id="email" placeholder="example@ex.com"></label>
+            <br>
+            <label for="password">Password </label><input type="password" id="password" placeholder="password"></label>
+        </div>
+<div class="submit">
+    <h2>Send or reset?</h2> 
+    
+    <button type="submit" a href="greetings.html" >Submit</button>
+    <button type="reset" >Reset</button>
+</div>
+
+    </form>
+
+</body>
+
+</html>
