@@ -1,0 +1,34 @@
+main {
+    height: 200vh;
+}
+body{
+    font-family: Arial, sans-serif; /* Основной шрифт для текста */
+}
+.logo{
+    max-width: 100%;
+    height: auto;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(102, 102, 102);
+    width: 100%; /* Сделаем ширину панели 100% */
+    position: relative;
+}
+.navbar a{
+    color: aliceblue;
+    font-family: "NarrowNews";
+    margin: 0 15px;
+    padding: 10px 20px;
+}
+  
+  
+  
+  
+  
+  @font-face {
+    font-family: "NarrowNews"; 
+    src: url("./fonts/ClanOT-NarrowNews.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
