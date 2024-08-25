@@ -30,12 +30,12 @@ let max = newNumbers[0];
 let min = newNumbers[0];
 
 for (let i = 0; i < newNumbers.length; i++) {
-   if(max < newNumbers[i]){
+  if (max < newNumbers[i]) {
     max = newNumbers[i];
-   }
-   if(min > newNumbers[i]){
+  }
+  if (min > newNumbers[i]) {
     min = newNumbers[i];
-   }
+  }
 }
 console.log(max);
 console.log(min);
