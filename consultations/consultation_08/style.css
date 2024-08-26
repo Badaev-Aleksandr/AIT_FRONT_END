@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */ 
+    /* второй вариант очистки отступов и вместо строки 17-35  */
+}
+
+/* исследованние box-sizing: border-box;*/
+/* header{
+    height: 200px;
+    width: 400px;
+    padding: 20px;
+    border: 2px solid;
+    margin: 30px;
+} */
+
+/* первый вариант очистки отступов */
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/* первый вариант очистки отступов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
