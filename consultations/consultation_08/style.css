@@ -1,7 +1,7 @@
-*{
+* {
     box-sizing: border-box;
     /* margin: 0;
-    padding: 0; */ 
+    padding: 0; */
     /* второй вариант очистки отступов и вместо строки 17-35  */
 }
 
@@ -15,11 +15,14 @@
 } */
 
 /* первый вариант очистки отступов */
-body,html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
+
 }
+
 /* первый вариант очистки отступов */
 h1,
 h2,
@@ -30,6 +33,40 @@ h6,
 p,
 ul,
 li {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    background: #191919;
+    height: 100%;
+    font-family: "DM Sans", sans-serif;
+    color: #FFFFFF;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    display: flex;
+    padding: 46px 50px;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.logo-header{
+font-size: 32px;
 }

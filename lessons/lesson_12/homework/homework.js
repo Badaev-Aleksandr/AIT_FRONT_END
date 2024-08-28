@@ -3,56 +3,46 @@
 Напишите функцию для удвоения каждого значения в массиве 
 (массив нужно передать аргументом) и вывода результата в консоль. 
 Вызовите функцию для демонстрации результата*/
+let testArray = [2, 4, 6, 8, 10];
 
-//----------------- Идея 1 ---------------------
-let numbers1 = [2, 4, 6, 8, 10];
-function doublingNumber1(numbers) {
-  let [x, y, z, a, b] = numbers;
-  x *= 2;
-  y *= 2;
-  z *= 2;
-  a *= 2;
-  b *= 2;
-  let newNumbers = [x, y, z, a, b];
-  console.log(newNumbers);
-}
-doublingNumber1(numbers1);
-//----------------- Идея 2 ---------------------
-let numbers2 = [2, 4, 6, 8, 10];
-function doublingNumber2(numbers) {
-    for( let i = 0; i < numbers.length; i++){
-        numbers[i] = numbers[i] * 2;
+function doubleFunc(inputArr){
+    for (let i = 0; i < inputArr.length; i++) {
+        inputArr[i] = inputArr[i] * 2;
     }
-  console.log(numbers);
 }
-doublingNumber2(numbers2);
-
+doubleFunc(testArray);
+console.log(testArray);
 /* Задача 2
 Напишите функцию, которая принимает строку и число n, а затем возвращает первые n символов строки. 
 Для отображения результа работы функции, вызовите её три раза с различными параметрами, 
 результат каждого вызова присвойте отдельной переменной и выведите переменные в консоль*/
-function getChars(line,number){
- let str = line.substring(0,number);
- return str;
+
+function getSubstring(inputStr, n){
+    let newString = inputStr.substring(3,n);
+    return newString;
 }
-let exempleOne = getChars("привет как тебя зовут?", 10);
-let exempleTwo = getChars("привет как тебя зовут?", 7);
-let exempleThree = getChars("привет как тебя зовут?", 15);
-console.log(exempleOne);
-console.log(exempleTwo);
-console.log(exempleThree);
+
+const exampleStr = "Hello, world";
+
+let newSubstring1 = getSubstring(exampleStr, 1);
+let newSubstring2 = getSubstring(exampleStr, 20);
+let newSubstring3 = getSubstring(exampleStr);
+
+console.log(`1-я строка - ${newSubstring1}; 2-я строка - ${newSubstring2}; 3-я строка - ${newSubstring3};`);
 
 /*Задача 3*
 У вас есть массив чисел [10, 15, 20, 25, 30]. Напишите функцию для вычисления среднего значения элементов массива 
 (массив нужно передать аргументом) и вывода результата в консоль. Вызовите функцию для демонстрации результата*/
-let numbers3 = [10, 15, 20, 25, 30];
-function getAverage(numbers){
-let sumNumbers = 0;
-for( let number of numbers){
-    sumNumbers += number;
+
+let exampleArr = [10, 15, 20, 25, 30];
+
+function getArrayAvg(arr){
+    let sum = 0;
+    for(let num of arr){
+        sum += num;
+    }
+    let result = sum / arr.length;
+    return result;
 }
-let average = sumNumbers/numbers.length;
-console.log(average);
-}
-getAverage(numbers3);
+console.log(getArrayAvg(exampleArr));
 
