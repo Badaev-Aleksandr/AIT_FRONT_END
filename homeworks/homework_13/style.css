@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+body{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(173, 157, 189);
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+li{
+    font-size: 30px;
+}
+p{
+    font-size: 60px;
+}

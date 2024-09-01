@@ -25,19 +25,19 @@ let firstTitle = document.querySelector(".title");
 //------------------- Добавление элементов на страницу ---------------------
 
 //Шаг 1 - Создаем элемент
-let newListItem = document.createElement("li");
+let firstListItem = document.createElement("li");
 
 //Шаг 2 - Заполнение контентом
-newListItem.textContent = "Surname: Smith";
+firstListItem.textContent = "Surname: Smith";
 
 //Шаг 3 - Выбираем элемент на странице, относительно которого добавим новый элемент
 let list = document.querySelector("ul");
 
 //Шаг 4 - добавим новый элемент на страницу
-list.before(newListItem); 
-list.after(newListItem);
-list.prepend(newListItem);
-list.append(newListItem);
+list.before(firstListItem); 
+list.after(firstListItem);
+list.prepend(firstListItem);
+list.append(firstListItem);
 
 //-------------------------- Изменение элементов 
 //с помощью textContent
