@@ -55,7 +55,7 @@ let getSumArrayLength = (initialArray) => {
   return sum;
 };
 
-let exampleArray = ["Red", "Green", "Black"];
+let exampleArray = ["Red", "Green", "Black", 23, undefined, null, " ", ['Blue']];
 
 let upperCaseResult = arrayProcessor(exampleArray, getUpperCaseArray);
 let arraySumResult = arrayProcessor(exampleArray, getSumArrayLength);
