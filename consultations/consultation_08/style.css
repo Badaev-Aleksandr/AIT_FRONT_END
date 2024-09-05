@@ -19,7 +19,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100%;
 
 }
 
@@ -40,6 +40,7 @@ li {
 a {
     color: #FFFFFF;
     text-decoration: none;
+    font-size: 17px;
 }
 
 #root {
@@ -51,22 +52,150 @@ a {
     color: #FFFFFF;
 }
 
-main {
-    flex: 1;
-}
-
 header {
     display: flex;
     padding: 46px 50px;
     justify-content: space-between;
-}
-
-nav{
-    display: flex;
-    gap: 40px;
     align-items: center;
 }
 
-.logo-header{
-font-size: 32px;
+nav {
+    display: flex;
+    gap: 40px;
 }
+
+.logo-header {
+    font-size: 32px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 50px 110px;
+    flex: 1;
+    align-items: center;
+}
+
+.section-latest-episodes {
+    display: flex;
+    flex-direction: column;
+}
+
+.latest-episodes-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-title{
+    font-size: 64px;
+}
+
+.main-button{
+    font-size: 17px;
+    padding: 12px 19px;
+    width: fit-content;
+    background-color: #118DA8;
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-family: "DM Sans", sans-serif;
+    
+}
+
+.episode-card{
+    display: flex;
+    margin: 110px 0px 135px;
+    background-color: #000000;
+    padding: 40px;
+    gap: 60px;
+    border-radius: 32px;
+}
+
+.episode-card_mod{
+    background: darkblue;
+    border: 2px solid yellow;
+}
+
+.episode-picture-container{
+    height: 432px;
+    width: 395px;
+}
+
+.episode-picture-container img{
+    height: 100%;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title{
+    font-size: 64px;
+}
+
+.card-bottom-info{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.episode-description{
+    font-size: 22px;
+    color: #FFFFFFB2;
+
+}
+
+.review-cards-container{
+    display: flex;
+    gap: 16px;
+}
+
+.review-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    width: 435px;
+    height: 321px;
+    border-radius: 32px;
+    background-color: #000000;
+}
+
+.review-text{
+    font-size: 36px;
+}
+
+.review-signature{
+    font-size: 24px;
+    color:#FFFFFFB2;
+
+}
+
+footer{
+    display: flex;
+    border-top: 2px solid #FFFFFF;
+    border-radius: 32px;
+    gap: 200px;
+    padding: 93px 100px;
+}
+
+.logo-footer{
+    font-size: 48px;
+    align-self: center;
+}
+
+.footer-nav-container{
+    display: flex;
+    gap: 150px;
+    font-size: 17px;
+}
+
+.footer-nav-container > div{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
