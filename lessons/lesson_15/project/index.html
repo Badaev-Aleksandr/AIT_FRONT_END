@@ -2,14 +2,12 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    ">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create Employee</title>
@@ -18,78 +16,76 @@
   <body>
     <h1>Create Employee</h1>
     <div class="main">
-    <div class="form-container">
-      <div class="form-input">
-        <form action="" id="form">
-          <div class="input-date">
-            <label for="name">Name*</label>
-            <input
-              name="userName"
-              class="user-input"
-              type="text"
-              placeholder="Enter employee Name"
-              id="name"
-              required
-            />
-          </div>
-          <div class="input-date">
-            <label for="surname">Surname*</label>
-            <input
-              name="userSurname"
-              class="user-surname"
-              type="text"
-              placeholder="Enter employee Surname"
-              id="surname"
-              required
-            />
-          </div>
-          <div class="input-date">
-            <label for="age">Age*</label>
-            <input
-              name="userAge"
-              class="user-age"
-              type="number"
-              min="0"
-              max="120"
-              placeholder="Enter employee Age"
-              id="age"
-              required
-            />
-          </div>
-          <div class="input-date">
-            <label for="job">Job Position</label>
-            <input
-              type="text"
-              name="userJob"
-              class="user-job"
-              placeholder="Enter employee Position"
-              id="job"
-            />
-          </div>
-        </form>
-      </div>
-      <div>
-        <button>Create</button>
+        <div class="form-input">
+          <form action="" id="form">
+            <div class="input-date">
+              <label for="name">Name*</label>
+              <input
+                name="userName"
+                class="user-input"
+                type="text"
+                placeholder="Enter employee Name"
+                id="name"
+                required
+              />
+            </div>
+            <div class="input-date">
+              <label for="surname">Surname*</label>
+              <input
+                name="userSurname"
+                class="user-surname"
+                type="text"
+                placeholder="Enter employee Surname"
+                id="surname"
+                required
+              />
+            </div>
+            <div class="input-date">
+              <label for="age">Age*</label>
+              <input
+                name="userAge"
+                class="user-age"
+                type="number"
+                min="0"
+                max="120"
+                placeholder="Enter employee Age"
+                id="age"
+                required
+              />
+            </div>
+            <div class="input-date">
+              <label for="job">Job Position</label>
+              <input
+                type="text"
+                name="userJob"
+                class="user-job"
+                placeholder="Enter employee Position"
+                id="job"
+              />
+            </div>
+            <div>
+              <button id="cread-button">Create</button>
+            </div>
+          </form>
+        </div>
+      <div class="card-container">
+        <div class="result-container">
+          <div class="info-date">Name</div>
+          <div class="result-name">John</div>
+        </div>
+        <div class="result-container">
+          <div class="info-date">Surname</div>
+          <div class="result-surname">Johnson</div>
+        </div>
+        <div class="result-container">
+          <div class="info-date">Age</div>
+          <div class="result-age">25</div>
+        </div>
+        <div class="result-container">
+          <div class="info-date">Job Position</div>
+          <div class="result-job">QA</div>
+        </div>
       </div>
     </div>
-    <div class="card-container">
-      <div class="result-container">
-        <div class="name-result">Name</div>
-        <div class="result-name">1</div>
-      </div>
-      <div class="result-container">
-        <div class="surname-result">Surame</div>
-        <div class="result-surname">2</div>
-      </div>
-      <div class="result-container">
-        <div class="age-result">Age</div>
-        <div class="result-age">3</div>
-      </div>
-      <div class="result-container">
-        <div class="job-result">Age</div>
-        <div class="result-job">4</div>
-      </div>
-    </div>
-</div>
   </body>
 </html>

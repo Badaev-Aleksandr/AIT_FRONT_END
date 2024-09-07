@@ -5,10 +5,13 @@
 
 body,
 html {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     margin: 0;
     padding: 0;
     background-color: #112233;
+    gap: 40px;
 }
 
 h1 {
@@ -18,26 +21,23 @@ h1 {
     font-weight: 700;
     justify-content: center;
 }
-.main{
-    display: flex;
-}
 
-.form-container {
+.main {
     display: flex;
-    flex-direction: column;
-    width: 590px;
-    height: 592px;
-    margin-top: 144px;
-    margin-left: 150px;
-    background-color: #FFFFFF;
-    border-radius: 4px;
-    padding: 60px;
-    gap: 30px;
+    justify-content: center;
+    gap: 94px;
+    padding: 0px 150px;
 }
 
 .form-input {
     display: flex;
     flex-direction: column;
+    width: 590px;
+    height: 592px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: 60px;
+    gap: 30px;
 }
 
 #form {
@@ -60,19 +60,28 @@ label {
     height: 24px;
     font-size: 16px;
     color: #6F6F6F;
-    font-weight: 400px;
+    font-weight: 400;
+}
+
+input::placeholder{
+    opacity: 0.4;
+    color: #1E1E1E;
+    border-color: #3F3F3F;
 }
 
 input {
-    height: 50px;
+    background-color: #FFFFFF;
+    border: 1px solid #3F3F3F;
+    height: 48px;
     font-size: 16px;
-    gap: 16px;
     border-radius: 4px;
     padding: 12px;
-    opacity: 40%;
+    opacity: 1;
     color: #1E1E1E;
     font-family: Lato;
+ 
 }
+
 
 button {
     width: 470px;
@@ -81,6 +90,7 @@ button {
     border-radius: 4px;
     padding: 20px 54px;
     font-size: 20px;
+    font-family: Lato;
     font-weight: 600;
     align-self: center;
     background-color: #1F27F5;
@@ -88,10 +98,41 @@ button {
     cursor: pointer;
 }
 
-.card-container{
+.card-container {
     display: flex;
     flex-direction: column;
+    border-radius: 4px;
+    padding: 60px;
+    justify-content: space-between;
     width: 456px;
     height: 470px;
-    gap: 94px;
+    gap: 30px;
+    background-color: #FFFFFF;
+    opacity: 0;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 65px;
+}
+
+.info-date {
+    font-size: 16px;
+    height: 21px;
+    color: #6F6F6F;
+}
+
+.result-name,
+.result-surname,
+.result-age,
+.result-job {
+    font-weight: 700;
+    font-size: 28px;
+    color: #1C1C1C;
+}
+
+.visible{
+    opacity: 1;
 }
