@@ -11,14 +11,14 @@ let addCardFunction = () => {
 };
 
 let hideCardFunction = () => {
-    cardContainer.classList.remove("visible");
+  cardContainer.classList.remove("visible");
 };
 
 let getDate = (event) => {
   let check = true;
 
   event.preventDefault();
-  
+
   let userNameValue = form.userName.value;
   resultName.textContent = userNameValue;
   let userSurnameValue = form.userSurname.value;
@@ -26,7 +26,11 @@ let getDate = (event) => {
   let userAgeValue = form.userAge.value;
   resultAge.textContent = userAgeValue;
   let userJob = form.userJob.value;
-  resultJob.textContent = userJob;
+  if (userJob.length === 0) {
+    resultJob.textContent = "Профессия не указана!";
+  } else {
+    resultJob.textContent = userJob;
+  }
 
   if (userNameValue.length === 0) {
     alert("Вы не ввели Имя!");
@@ -42,7 +46,7 @@ let getDate = (event) => {
   }
   if (check) {
     addCardFunction();
-  }else{
+  } else {
     hideCardFunction();
   }
 

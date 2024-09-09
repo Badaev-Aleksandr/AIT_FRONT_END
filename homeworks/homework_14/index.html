@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="./styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сalc ideal weight</title>
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/png" href="./media/calculator.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calc ideal weight</title>
     <script src="./index.js" defer></script>
-</head>
-<body>
-    <form id="main-form" action=""></form>
-    <div class="main-container">
-        <label for="">Рост, см*:
-            <input type="number" placeholder="Введите свой рост" >
-        </label>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Форма расчета идеального веса</h1>
+      <div class="card">
+        <form id="form" action="">
+          <label for="userHeight">Рост, см*:</label>
+          <input
+            name="user-height"
+            id="userHeight"
+            type="number"
+            placeholder="Введите свой рост"
+            min="150"
+            max="250"
+            required
+          />
+          <label for="userGender">Выберете пол*</label>
+          <select name="gender" id="userGender" class="gender-select" required>
+            <option value="none" selected></option>
+            <option value="male">Мужской</option>
+            <option value="famale">Женский</option>
+          </select>
+          <button id="result-button">Рассчитать</button>
+          <div class="result-weight">Ваш идеальный вес:</div>
+        </form>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
