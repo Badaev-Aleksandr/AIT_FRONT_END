@@ -15,35 +15,49 @@ let hideCardFunction = () => {
 };
 
 let getDate = (event) => {
-  let check = true;
-
   event.preventDefault();
 
-  let userNameValue = form.userName.value;
+  let check = true;
+
+  let userNameValue = form.userName.value.trim();
   resultName.textContent = userNameValue;
-  let userSurnameValue = form.userSurname.value;
+  let userSurnameValue = form.userSurname.value.trim();
   resultSurname.textContent = userSurnameValue;
-  let userAgeValue = form.userAge.value;
+  let userAgeValue = Number(form.userAge.value.trim());
   resultAge.textContent = userAgeValue;
-  let userJob = form.userJob.value;
-  if (userJob.length === 0) {
-    resultJob.textContent = "Профессия не указана!";
-  } else {
-    resultJob.textContent = userJob;
-  }
+  let userJob = form.userJob.value.trim();
 
   if (userNameValue.length === 0) {
     alert("Вы не ввели Имя!");
     check = false;
+    hideCardFunction();
+    return;
   }
   if (userSurnameValue.length === 0) {
     alert("Вы не ввели Фамилию!");
     check = false;
+    hideCardFunction();
+    return;
   }
   if (userAgeValue.length === 0) {
     alert("Вы не ввели возраст!");
     check = false;
+    hideCardFunction();
+    return;
+  } else if (userAgeValue < 18 || userAgeValue > 80) {
+    alert(
+      "Упс кажется вы ошиблись в возрасте! " +
+        "Сотрудники только от 18 до 80 лет"
+    );
+    return;
   }
+
+  if (userJob.length === 0) {
+    resultJob.textContent = "Должность не указана!";
+  } else {
+    resultJob.textContent = userJob;
+  }
+
   if (check) {
     addCardFunction();
   } else {
@@ -53,4 +67,4 @@ let getDate = (event) => {
   form.reset();
 };
 
-buttonResult.addEventListener("click", getDate);
+form.addEventListener("submit", getDate);

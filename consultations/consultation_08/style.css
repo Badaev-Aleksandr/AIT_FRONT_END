@@ -79,6 +79,7 @@ main {
 .section-latest-episodes {
     display: flex;
     flex-direction: column;
+    max-width: 1337px;
 }
 
 .latest-episodes-header {
@@ -101,7 +102,7 @@ main {
     border-radius: 6px;
     color: #FFFFFF;
     font-family: "DM Sans", sans-serif;
-    
+    cursor: pointer;
 }
 
 .episode-card{
@@ -119,13 +120,21 @@ main {
 }
 
 .episode-picture-container{
+  background-image: url("./images/microphone.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.episode-picture-container{
     height: 432px;
     width: 395px;
 }
 
-.episode-picture-container img{
-    height: 100%;
-}
+/* .episode-picture-container img{
+     height: 100%; 
+    width: 100%;
+} */
 
 .card-content{
     display: flex;
@@ -150,7 +159,10 @@ main {
 
 .review-cards-container{
     display: flex;
+    justify-content: center;
     gap: 16px;
+    flex-wrap: wrap;
+
 }
 
 .review-card{
@@ -158,8 +170,8 @@ main {
     flex-direction: column;
     justify-content: space-between;
     padding: 50px;
-    width: 435px;
-    height: 321px;
+    max-width: 435px;
+    min-height: 321px;
     border-radius: 32px;
     background-color: #000000;
 }

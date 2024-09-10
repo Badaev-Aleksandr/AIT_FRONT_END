@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" href="./media/e.jpg">
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,8 +15,8 @@
     <script src="./index.js" defer></script>
   </head>
   <body>
-    <h1>Create Employee</h1>
-    <div class="main">
+    <h1>Create Employee</h1>  
+    <div class="root">
         <div class="form-input">
           <form action="" id="form">
             <div class="input-date">
@@ -23,10 +24,8 @@
               <input
                 name="userName"
                 class="user-input"
-                type="text"
                 placeholder="Enter employee Name"
                 id="name"
-                required
               />
             </div>
             <div class="input-date">
@@ -34,10 +33,8 @@
               <input
                 name="userSurname"
                 class="user-surname"
-                type="text"
                 placeholder="Enter employee Surname"
                 id="surname"
-                required
               />
             </div>
             <div class="input-date">
@@ -46,17 +43,16 @@
                 name="userAge"
                 class="user-age"
                 type="number"
-                min="0"
-                max="120"
+                min="18"
+                max="80"
                 placeholder="Enter employee Age"
                 id="age"
-                required
+              
               />
             </div>
             <div class="input-date">
               <label for="job">Job Position</label>
               <input
-                type="text"
                 name="userJob"
                 class="user-job"
                 placeholder="Enter employee Position"
@@ -71,19 +67,19 @@
       <div class="card-container">
         <div class="result-container">
           <div class="info-date">Name</div>
-          <div class="result-name">John</div>
+          <div class="result-name"></div>
         </div>
         <div class="result-container">
           <div class="info-date">Surname</div>
-          <div class="result-surname">Johnson</div>
+          <div class="result-surname"></div>
         </div>
         <div class="result-container">
           <div class="info-date">Age</div>
-          <div class="result-age">25</div>
+          <div class="result-age"></div>
         </div>
         <div class="result-container">
           <div class="info-date">Job Position</div>
-          <div class="result-job">QA</div>
+          <div class="result-job"></div>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Lato;
+    font-family: "Lato" , sans-serif;
 }
 
 body,
@@ -15,14 +15,15 @@ html {
 }
 
 h1 {
-    display: flex;
+    /* display: flex; */
     color: white;
     font-size: 40px;
     font-weight: 700;
-    justify-content: center;
+    /* justify-content: center; */
+    text-align: center;
 }
 
-.main {
+.root {
     display: flex;
     justify-content: center;
     gap: 94px;
@@ -78,10 +79,8 @@ input {
     padding: 12px;
     opacity: 1;
     color: #1E1E1E;
-    font-family: Lato;
- 
+    font-family: "Lato" , sans-serif;
 }
-
 
 button {
     width: 470px;
@@ -90,7 +89,7 @@ button {
     border-radius: 4px;
     padding: 20px 54px;
     font-size: 20px;
-    font-family: Lato;
+    font-family: "Lato" , sans-serif;
     font-weight: 600;
     align-self: center;
     background-color: #1F27F5;
