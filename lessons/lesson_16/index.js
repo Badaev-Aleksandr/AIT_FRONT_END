@@ -80,3 +80,4 @@ console.log(bookStore);
 
 console.log(bookStore.books[1].price);
 bookStore.sayHi();
+

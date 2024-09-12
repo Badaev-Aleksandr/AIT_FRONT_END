@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(114, 153, 221);
+    width: 700px;
+    min-height: 550px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 15px;
+}
+
+.info-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    overflow: auto;
+}
+
+h2{
+    padding: 10px;
+}
+
+li{
+padding: 5px;
+
+}
+
+.characteristics-ship{
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 500px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.info-ship{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.ship{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.result-ship{
+    display: flex;
+    font-size: 25px;
+}
+
+.ship-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.ship-result li{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style-type: none;
+
+}
+
+button{
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: aqua;
+}
+
+.visible{
+    opacity: 0;
+}
