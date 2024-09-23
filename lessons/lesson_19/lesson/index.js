@@ -102,7 +102,8 @@ const getData = () => {
 
 // getDataButton.addEventListener("click", getData);
 
-//---------------------------------Отправка запроса - fetch(async await)
+//---------------------------------Отправка запроса - fetch(async await)------------------------------------------
+
 const getCatFactsButton = document.querySelector("#get-cats-fact");
 const factsBlock = document.querySelector(".data-container");
 
