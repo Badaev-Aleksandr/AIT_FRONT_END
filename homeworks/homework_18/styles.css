@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.timer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    gap: 10px;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: rgb(25, 167, 233);
+}
+
+#timer-content{
+    margin-bottom: 10px;
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    text-shadow: 
+        0 0 5px white, 
+        0 0 10px white, 
+        0 0 20px white, 
+        0 0 30px white, 
+        0 0 40px white, 
+        0 0 50px white, 
+        0 0 60px white; /* Светящийся эффект */
+}
+
+.action-timer{
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+}
+
+button{
+    padding: 5px;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    text-shadow: 
+    0 0 5px white, 
+    0 0 10px white, 
+    0 0 20px white, 
+    0 0 30px white, 
+    0 0 40px white, 
+    0 0 50px white, 
+    0 0 60px white;
+    background-color: rgb(86, 86, 174);
+}
+
+button:active{
+    color: red;
+background-color: black;
+}
+
+button:disabled{
+    cursor: auto;
+    background-color: black;
+    color: red;
+}
