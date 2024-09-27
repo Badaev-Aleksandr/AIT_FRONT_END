@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body,
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 15px;
+}
+
+#weather-input{
+    width: 300px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+.result-weather-container{
+    border: 2px solid black;
+    width: 300px;
+    height: 100px;
+}
