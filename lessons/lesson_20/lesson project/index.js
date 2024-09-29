@@ -25,8 +25,7 @@ http://openweathermap.org/img/w/${icon}.png
 
 const getWeatherButton = document.querySelector("#get-weather-button");
 const getCityInput = document.querySelector("#city");
-const resultTemp = document.querySelector(".result-temp");
-const resultImgWeather = document.querySelector(".result-icon");
+const resultWeather = document.querySelector(".result-weather");
 const weatherForm = document.querySelector("#weather-form");
 const userAppId = "2669988ce3f2970e0d287742951e368a";
 const spinner = document.querySelector(".spinner");
@@ -41,8 +40,9 @@ const hideSpinner = () => {
 
 const getWeather = async () => {
   try {
-    resultTemp.innerHTML = ``;
-    resultImgWeather.innerHTML = ``;
+    resultWeather.classList.remove("result")
+    resultWeather.classList.remove("error");
+    resultWeather.innerHTML = ``;
     showSpinner();
     const getCity = getCityInput.value.trim();
 
@@ -54,32 +54,40 @@ const getWeather = async () => {
       console.log(weather);
 
       if (response.ok) {
-        resultTemp.classList.remove("error")
+        resultWeather.classList.remove("error");
         let temp = weather.main.temp;
         temp = (temp - 273.15).toFixed(0);
 
         const icon = weather.weather[0].icon;
         const iconUrl = `http://openweathermap.org/img/w/${icon}.png`;
 
-        resultTemp.textContent = `${getCity}: ${temp}°C`;
-        resultImgWeather.innerHTML = `
-    <img src ="${iconUrl}">
-    `;
+        resultWeather.innerHTML = `${getCity}: ${temp}°C <img src ="${iconUrl}">`;
+        resultWeather.classList.add("result");
       } else {
         throw Object.assign(new Error("Some Error"), {
           responseError: weather,
         });
       }
     } else {
+      resultWeather.classList.remove("result");
+      resultWeather.classList.remove("error");
       alert("Please enter City!");
     }
   } catch (error) {
-    resultTemp.classList.add("error");
-    resultTemp.innerHTML = `Error status: ${error.responseError.cod}<br>Error message: ${error.responseError.message}`;
+    resultWeather.classList.add("error");
+    resultWeather.innerHTML = `Error status: ${error.responseError.cod}<br>Error message: ${error.responseError.message}`;
   } finally {
     hideSpinner();
     weatherForm.reset();
   }
 };
+
+//Добавили нажатие Enter для поля Input
+getCityInput.addEventListener("keydown", function(event){
+  if(event.key === "Enter"){
+    event.preventDefault();
+    getWeatherButton.click();
+  }
+})
 
 getWeatherButton.addEventListener("click", getWeather);
