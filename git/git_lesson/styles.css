@@ -1,0 +1,16 @@
+#root{
+display: flex;
+flex-direction: column;
+}
+
+p{
+    font-size: 26px;
+}
+
+header{
+    background-color: aquamarine;
+}
+
+footer{
+    background-color: aqua;
+}
