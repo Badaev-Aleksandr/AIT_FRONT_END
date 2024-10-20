@@ -3,7 +3,6 @@
 Напиши функцию, которая принимает массив чисел и возвращает их сумму.
 */
 
-
 const numbers = [1, 2, 3, 4, 5];
 
 const sum = numbers.reduce((acc, currentValue) => {
@@ -103,9 +102,9 @@ const numbers3 = [3, 5, 7, 2, 8];
 // Ожидаемый результат: 8
 
 const maxNumber = numbers3.reduce((acc, num) => {
-  if(acc>num){
+  if (acc > num) {
     return acc;
-  }else{
+  } else {
     return num;
   }
 });
@@ -117,13 +116,13 @@ console.log(maxNumber);
 Напишите функцию, которая подсчитывает количество вхождений каждого элемента в массиве и возвращает объект.
 */
 
-const fruitsArr = ['apple', 'banana', 'apple', 'orange', 'banana', 'banana'];
+const fruitsArr = ["apple", "banana", "apple", "orange", "banana", "banana"];
 // Ожидаемый результат: { apple: 2, banana: 3, orange: 1 }
 
 const fruitsObj = fruitsArr.reduce((acc, fruit) => {
-   acc[fruit] = (acc[fruit] || 0) + 1; 
-   return acc;
-},{});
+  acc[fruit] = (acc[fruit] || 0) + 1;
+  return acc;
+}, {});
 
 console.log(fruitsObj);
 
@@ -132,9 +131,9 @@ console.log(fruitsObj);
 Если ключи повторяются, значения должны быть объединены в массив.
 */
 const data = [
-  { key: 'a', value: 1 },
-  { key: 'b', value: 2 },
-  { key: 'a', value: 3 }
+  { key: "a", value: 1 },
+  { key: "b", value: 2 },
+  { key: "a", value: 3 },
 ];
 // Ожидаемый результат: { a: [1, 3], b: [2] }
 
@@ -150,6 +149,5 @@ const numbers4 = [5, 12, 8, 130, 44];
 Напишите функцию, которая принимает массив строк, где каждая строка имеет формат "ключ:значение", 
 и возвращает объект с этими ключами и значениями.
 */
-const entries = ['name:Alice', 'age:25', 'city:New York'];
+const entries = ["name:Alice", "age:25", "city:New York"];
 // Ожидаемый результат: { name: 'Alice', age: '25', city: 'New York' }
-
