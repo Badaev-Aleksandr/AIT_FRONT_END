@@ -24,7 +24,7 @@ use("42_2_lesson4_bd");
 //Вывод данных с лемитом
 // db.user.find().limit(2);
 
-// db.user.find().skip(2);
+ //db.user.find().skip(2);
 
 // Вывод данных с сортировкой a...z
 // db.user.find().sort({name: 1});
