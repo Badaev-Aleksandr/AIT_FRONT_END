@@ -1,0 +1,38 @@
+CREATE DATABASE hw_lesson03;
+
+CREATE TABLE kid_group (
+  id serial PRIMARY KEY,
+  group_name varchar NOT NULL UNIQUE
+  );
+  
+CREATE TABLE child (
+  id serial PRIMARY KEY,
+  child_name varchar NOT NULL,
+  child_age int CONSTRAINT not_younger_than_1_and_over_3
+  CHECK (child_age >= 1 AND child_age <= 3) NOT NULL,
+  group_id int,
+  FOREIGN KEY (group_id) REFERENCES kid_group(id)
+  );
+  
+  
+  INSERT INTO kid_group (group_name)
+  VALUES 
+  ('Foxes'),
+  ('Hares'),
+  ('Bears'),
+  ('Tigers')
+  
+  INSERT INTO child (child_name, child_age, group_id)
+  VALUES 
+  ('Alex',1,4),
+  ('Lea',2,2),
+  ('Sem',3,2),
+  ('Lisa',2,4),
+  ('Bob',2,1),
+  ('Sveta',1,3),
+  ('Sascha',1,3),
+  ('Olga',3,1),
+  ('Anton',1,2)
+
+-- Исправлял описание ошибки
+DROP TABLE child;
