@@ -92,7 +92,7 @@ use("42_lesson_5");
 //   { $sort: { weight: -1 } },
 // ]);
 
-//Вывести второе по тяжести животное
+//Вывести второе по тяжести хищное животное
 // db.animal.aggregate([
 //   { $match: { predatory: true } },
 //   { $sort: { weight: -1 } },
